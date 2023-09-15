@@ -19,35 +19,36 @@ html, body {
     height:100px;
     width:100%;
     /* made nav bar looking div till now */
+    padding: 0 4vw;
+
     display: flex; /* children of nav to come in a line, or allign themselves horizontally one after another */
     align-items: center;/* in horizontally, everything under nav div, allign themselves like they have equal 
     space from top and bottom  */
     justify-content: space-between; /*got space between logo element and nav-part2 div*/
-    padding: 0 4vw;
+    
     border-bottom: 2px solid #dadada;
     /* background-color: lightseagreen; */
 
 }
 
-.nav-part2{
+.navContentBox{  /*later make js like when u touch individual h4's, underline come below them*/
     display: flex;/*all elements of this div allign themselves horizontally*/
     gap: 4vw; /*all elements under it got 4%of width gap in between them*/
     align-items: center;
 }
 
-.nav h2{
+.nav h1{
     font-size: 2vw; /*font is 2% of viewport width*/
 }
 
-.nav h4{
+.navContentBox h4{
     font-size: 1vw;
 }
 
-.nav i{
-    font-weight: 800; /*whats this?*/
+.navContentBox i{
     display:none; /*this will make icon disappear*/
 }
-
+/* nav mobile version */
 @media (max-width:600px) {
     .nav{
         height: 60px;
@@ -67,36 +68,10 @@ html, body {
         font-size: 6vw;
     }
 
-    .content{
-        height:calc(100% - 60px);
-        flex-direction: column;
-        width: 100vw;
-    }
 
-    .left{
-        width:100%;
-        height:60%;
-    }
-
-    .right{
-        height:50%;
-        width:100%
-    }
-
-    .left h1{
-        font-size: 10vw;
-        line-height: 11vw;
-    }
-
-    .left p{
-        margin-top:7vw ;
-        margin-bottom: 8vw;
-        font-size: 3vw;
-        width: 90%;
-    }
 }
 
-.nav-part2 button{
+.navContentBox button{
     font-size: 1vw; /*same as nav part 2 */
     padding: 0.6vw 1.4vw;
     background-color: #FF735C;
@@ -133,12 +108,12 @@ html, body {
 }
 
 .left p{
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: #666;
-    width: 80%;
     margin-top: 1.5vw;
     margin-bottom: 4vw;
+    width: 80%;
+    color: #666;
+    font-size: 1.2vw;
+    font-weight: 600;
 }
 
 .left button{
@@ -158,9 +133,43 @@ html, body {
 }
 
 .right img{
-    height: 100%;
+    height: 70%;
     width: 100%;
 }
 
+@media (max-width:600px) {
+    .content{
+        height:calc(100% - 60px);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left{
+        width:100%;
+        height:60%;
+    }
+
+    .right{
+        height:50%;
+        width:100%
+    }
+
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .left p{
+        margin-top:7vw ;
+        margin-bottom: 8vw;
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    .right img{
+        height:100%;
+    }
+
+}
 
 
