@@ -16,10 +16,10 @@ html, body {
 }
 
 .nav{
-    height:100px;
+    height:100px; /*decided nav bar height as fixed and width as 100% of screen*/
     width:100%;
     /* made nav bar looking div till now */
-    padding: 0 4vw;
+    padding: 0 4vw; /*gave little distance between border and content from right left*/
 
     display: flex; /* children of nav to come in a line, or allign themselves horizontally one after another */
     align-items: center;/* in horizontally, everything under nav div, allign themselves like they have equal 
@@ -33,8 +33,9 @@ html, body {
 
 .navContentBox{  /*later make js like when u touch individual h4's, underline come below them*/
     display: flex;/*all elements of this div allign themselves horizontally*/
-    gap: 4vw; /*all elements under it got 4%of width gap in between them*/
-    align-items: center;
+    gap: 4vw; /*all elements under it got 4% of width gap in between them*/
+    align-items: center; 
+    justify-content: center;
 }
 
 .nav h1{
@@ -133,7 +134,7 @@ html, body {
 }
 
 .right img{
-    height: 70%;
+    height: 85%;
     width: 100%;
 }
 
@@ -146,11 +147,11 @@ html, body {
 
     .left{
         width:100%;
-        height:60%;
+        height:40%;
     }
 
     .right{
-        height:40%;
+        height:60%;
         width:100%;
     }
 
@@ -167,7 +168,7 @@ html, body {
     }
 
     .right img{
-        height:150%;
+        height:100%;
         width:100%;
     }
 
