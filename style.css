@@ -40,14 +40,17 @@ html, body {
 
 .nav h1{
     font-size: 2vw; /*font is 2% of viewport width*/
+    cursor: pointer;
 }
 
 .navContentBox h4{
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .navContentBox i{
     display:none; /*this will make icon disappear*/
+    cursor: pointer;
 }
 /* nav mobile version */
 @media (max-width:600px) {
@@ -80,6 +83,7 @@ html, body {
     border-radius: 5px;
     font-weight: 700;
     border: 0px ;
+    cursor: pointer;
 }
 
 /* nav bar over, content started  */
@@ -125,6 +129,7 @@ html, body {
     border-radius: 5px;
     font-weight: 700;
     border: 0px ;
+    cursor: pointer;
 }
 
 .right{
