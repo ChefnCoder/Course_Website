@@ -135,12 +135,16 @@ html, body {
 .right{
     height: 100%;
     width:50%;
+    padding-left: 60px;
+    padding-right:10px;
+    
     /* background-color: beige; */
 }
 
 .right img{
     height: 85%;
     width: 100%;
+    
 }
 
 @media (max-width:600px) {
